@@ -11,6 +11,9 @@ namespace Buchhaltung_New.Model
         public static List<Konto> konten;
         public static List<Buchung> buchungen;
 
+        /// <summary>
+        /// Refreshes the Values in the Konten using the Buchungne
+        /// </summary>
         public static void refreshKontoValues()
         {
             //Reset all the values of Konto to 0

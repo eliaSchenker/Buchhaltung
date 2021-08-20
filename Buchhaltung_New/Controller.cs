@@ -27,6 +27,9 @@ namespace Buchhaltung_New
             Application.Run(mainWindow);
         }
 
+        /// <summary>
+        /// Initializes all the modes
+        /// </summary>
         public void initModes()
         {
             modes = new List<Mode>();
@@ -34,6 +37,9 @@ namespace Buchhaltung_New
             modes.Add(new Mode("Kontoübersicht", new Kontouebersicht()));
         }
 
+        /// <summary>
+        /// Fills the modelist using the modes in the modes array
+        /// </summary>
         private void fillModeList()
         {
             mainWindow.getModeSelectionList().Items.Clear();
@@ -44,7 +50,7 @@ namespace Buchhaltung_New
         }
 
         /// <summary>
-        /// Opens the current selected mode (Programm)
+        /// Opens the current selected mode (Program)
         /// </summary>
         public void openCurrentMode()
         {

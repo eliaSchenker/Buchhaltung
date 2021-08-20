@@ -28,6 +28,13 @@ namespace Buchhaltung_New
             MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        /// <summary>
+        /// Shows an okay cancel dialog
+        /// </summary>
+        /// <param name="message">Message of the dialog</param>
+        /// <param name="title">Title of the dialog</param>
+        /// <param name="icon">Icon of the dialog</param>
+        /// <returns>Did the user press okay or cancel</returns>
         public static bool showOkCancelDialog(string message, string title, MessageBoxIcon icon = MessageBoxIcon.Exclamation)
         {
             DialogResult result = MessageBox.Show(message, title, MessageBoxButtons.OKCancel, icon);
